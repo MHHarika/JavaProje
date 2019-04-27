@@ -1,0 +1,125 @@
+create table tbl_YolcuBilgileri(
+
+yolcubilgi_id int auto_increment not null primary key,
+
+ad nvarchar(50),
+
+soyad nvarchar(100),
+
+tc char(11),
+
+cepno char(12),
+
+mail nvarchar(40),
+
+cinsiyet char(1),
+
+d_tarihi nvarchar(15)
+);
+
+
+
+create table tbl_UcusSeferBilgileri(
+
+ucusseferbilgileri_id int auto_increment not null primary key,
+
+sefer_no int,
+
+nereden nvarchar(40),
+
+nereye nvarchar(50),
+
+aktarma bit,
+
+ucusTarihi nvarchar(15),
+
+ucusSaati TIME,
+
+sure TIME,
+
+fiyat float 
+);
+
+
+
+create table tbl_UcusSeferBilgileriToYolcuBilgi
+(
+
+id int auto_increment not null primary key,
+
+fkyolcubilgi_id int not null,
+
+fkucusseferbilgileri_id int not null,
+
+foreign key (fkyolcubilgi_id) references tbl_YolcuBilgileri(yolcubilgi_id),
+
+foreign key (fkucusseferbilgileri_id) references tbl_UcusSeferBilgileri(ucusseferbilgileri_id)
+
+);
+
+
+
+
+
+create table tbl_rezervasyon(
+
+rezervasyon_id int auto_increment not null primary key,
+
+rezervasyon_no int,
+
+rez_tarihi nvarchar(15),
+
+rez_saati TIME,
+
+fkyolcubilgi_id int not null,
+
+foreign key (fkyolcubilgi_id) references tbl_YolcuBilgileri(yolcubilgi_id)
+
+);
+
+
+
+
+
+
+create table tbl_Odeme(
+ odeme_id int auto_increment not null primary key,
+
+bilgimaili bit,
+
+kartno int,
+
+fkrezervasyon_id int not null,
+
+foreign  key(fkrezervasyon_id) references tbl_rezervasyon(rezervasyon_id)
+);
+
+
+
+
+create table tbl_EkHizmet(
+
+ekhizmet_id int auto_increment not null primary key,
+
+bajaucret float,
+
+koltukucret float,
+
+yemekucret float
+);
+
+
+
+
+create table tbl_EkHizmetToRezervasyon(
+
+id int auto_increment not null primary key,
+
+fkekhizmet_id int not null,
+
+foreign key(fkekhizmet_id) references tbl_EkHizmet(ekhizmet_id),
+
+fkrezervasyon_id int not null,
+
+foreign  key(fkrezervasyon_id) references tbl_rezervasyon(rezervasyon_id)
+)

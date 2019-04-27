@@ -1,0 +1,42 @@
+INSERT INTO tbl_ucusseferbilgileri(ucusseferbilgileri_id,sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (567,670,"Ankara","Ýstanbul",false,'2019-05-09','08:50:00','01:00:00',101.99);
+
+
+
+
+INSERT INTO tbl_ucusseferbilgileri(sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (670,"Ankara","Ýstanbul",false,'2019-05-09','11:55:00','01:00:00',109.99);
+
+
+
+INSERT INTO tbl_ucusseferbilgileri(sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (670,"Ankara","Ýstanbul",false,'2019-05-09','19:25:00','01:00:00',121.30);
+
+
+INSERT INTO tbl_ucusseferbilgileri(sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (670,"Ankara","Ýstanbul",false,'2019-05-09','21:30:00','01:00:00',96.50);
+
+
+INSERT INTO tbl_ucusseferbilgileri(sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (780,"Ýstanbul","Ankara",false,'2019-05-15','18:25:00','01:15:00',97.90);
+
+
+INSERT INTO tbl_ucusseferbilgileri(sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (780,"Ýstanbul","Ankara",false,'2019-05-15','20:05:00','01:10:00',96.98);
+
+
+INSERT INTO tbl_ucusseferbilgileri(sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (780,"Ýstanbul","Ankara",false,'2019-05-15','20:55:00','01:15:00',100.5);
+
+
+
+INSERT INTO tbl_ucusseferbilgileri(sefer_no,nereden,nereye,aktarma,ucusTarihi,ucusSaati,sure,fiyat) 
+
+VALUES (780,"Ýstanbul","Ankara",false,'2019-05-15','22:15:00','01:10:00',111.6);

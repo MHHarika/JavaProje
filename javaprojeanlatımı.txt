@@ -1,0 +1,28 @@
+Online bilet alým sayfasý :
+
+1.kýsým-
+Ucus Sefer Bilgileri Bölümü:
+Yolcudan gideceði uçuþ için bilgiler alýnýr .Bunlar : Gidiþ-dönüþ paket bilet, tek yön bilet ,
+gidiþ dönüþ istikameti bilgileridir. Bu bilgiler UcusSeferBilgileri Class nda tutulur ve veritabanýndan
+firma tarafýndan girilen bilgilerden filitre edilerek Veritabaný classýndaki metodla görüntülenir.
+Gelen uçuþlar arasýndan yolcudan gitmek istediði uçuþun kodunu seçmesi istenir .
+2.kýsým - 
+Yolcu Bilgileri Bölümü:
+Yolcu ucuskodunu seçtikten sonra bilet için gereken kiþisel bilgiler istenir.Bu bilgiler YolcuBilgileri 
+Class 'ýnda tutulur.Bilgiler: ad,soyad,tc ,cep,mail,cinsiyet ve doðum tarihidir.
+Alýnan bu bilgiler yolcu kaydý oluþturmak için veritabanýna kaydedilir .Bunun için Veritabaný class ndan
+bir metod çaðýrýlýr.
+3.kýsým-
+Ek Hizmet Bölümü:
+Yolcu bilgileri alýndýktan sonra ek hizmet seçenekleri menüsü gelir .Burdan isteðe baðlý seçimler görüntülenebilir.
+Bu seçimler bagaj hakký,yemek seçimi,koltuk seçimi þeklindedir .Bunlarýn hepsine ait metodlar Ekhizmet class nda 
+fiyat bilgileri ile birlikte tutulur.
+4.kýsým -
+Ödeme Bölümü: 
+Bu bölümde yolcunun seçtiði bilet bilgileri ve ödeyeceði hizmetin tutarý gösterilir.Bu bilgiler
+Odeme class ýnda metod üzerinden çaðýrýlýr.Yolcudan kart bilgisi istenir ve ödeme alýnýr.
+5.kýsým-
+Rezervasyon Bölümü:
+ Ödeme alýndýktan sonra yapýlan rezervasyona ait bilgiler görüntülenir.
+Bilet bilgileri , yolcuya ait bilgiler , rezervasyon tarihi ve kodu görüntülenir.
+Bu bölüme ait bilgiler ve oluþturulan metodlar Rezervasyon class nda tutulur.
